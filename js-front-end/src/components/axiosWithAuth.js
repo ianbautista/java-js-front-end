@@ -2,13 +2,13 @@
 
 import axios from "axios";
 
-export const axiosWithAuth =() => {
-  const token = window.localStorage.getItem("token"); 
+export const axiosWithAuth = () => {
+	const token = window.localStorage.getItem("token");
 
-  return axios.create({
-    headers: {
-      Authorization: `Bearer ${token}`
-    },
-    baseURL: 'http://localhost:2019'
-  });
+	return axios.create({
+		headers: {
+			Authorization: `Bearer ${token}`,
+		},
+		baseURL: "https://ianbautista-stumps.herokuapp.com",
+	});
 };

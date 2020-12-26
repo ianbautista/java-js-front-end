@@ -1,5 +1,3 @@
-// code from student Nicholas Myers! Thank you Nicholas!
-
 import axios from "axios";
 
 export const axiosWithAuth = () => {
@@ -9,6 +7,6 @@ export const axiosWithAuth = () => {
 		headers: {
 			Authorization: `Bearer ${token}`,
 		},
-		baseURL: "https://ianbautista-stumps.herokuapp.com",
+		baseURL: "https://ianbautista-stumps.herokuapp.com/",
 	});
 };

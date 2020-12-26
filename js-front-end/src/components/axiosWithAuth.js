@@ -7,6 +7,6 @@ export const axiosWithAuth = () => {
 		headers: {
 			Authorization: `Bearer ${token}`,
 		},
-		baseURL: "YOUR BASE ENDPOINT HERE",
+		baseURL: "https://ianbautista-stumps.herokuapp.com/",
 	});
 };

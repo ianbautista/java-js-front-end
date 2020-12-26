@@ -9,7 +9,7 @@ const Login = (props) => {
 		e.preventDefault();
 		axios
 			.post(
-				"YOUR LOGIN ENDPOINT HERE",
+				"https://ianbautista-stumps.herokuapp.com/login",
 				`grant_type=password&username=${credentials.username}&password=${credentials.password}`,
 				{
 					headers: {
